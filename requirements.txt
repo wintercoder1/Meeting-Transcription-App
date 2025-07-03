@@ -1,4 +1,4 @@
-numpy==2.3.1
+numpy==2.2.6
 openai==1.93.0
 openai_whisper==20250625
 PyQt5==5.15.11
