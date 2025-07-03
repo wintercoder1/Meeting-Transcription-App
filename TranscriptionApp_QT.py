@@ -1,8 +1,6 @@
 import sys
 import threading
 import os
-# from dotenv import load_dotenv, set_key
-# from Constants import ENV_FILE
 from APIKeyManager import load_api_key, save_api_key
 from Dialogs.InitialInstructionsDialog import InitialInstructionsDialog
 from Dialogs.OpenAIApiKeyDialog import OpenAIApiKeyDialog
@@ -40,7 +38,8 @@ class TranscriptionApp(QWidget):
         # Header row layout for title and API status
         header_layout = QHBoxLayout()
         # self.title_label = QLabel("📜🪶 Transcription")
-        self.title_label = QLabel("🎧 Transcription")
+        # self.title_label = QLabel("🎧 Transcription")
+        self.title_label = QLabel("📝 Transcription")
         self.title_label.setAlignment(Qt.AlignLeft)
         self.api_status_label = QLabel("🔴 API Key not set")
         self.api_status_label.setAlignment(Qt.AlignRight)
